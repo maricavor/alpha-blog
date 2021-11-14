@@ -23,7 +23,6 @@ class ArticlesController < ApplicationController
 
   # POST /articles or /articles.json
   def create
-    byebug
     @article = Article.new(article_params)
     @article.user = current_user
     respond_to do |format|
